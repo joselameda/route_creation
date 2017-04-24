@@ -13,6 +13,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<?=base_url()?>css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?=base_url()?>css/bootstrap-datepicker.min.css" rel="stylesheet">
+	<script src="<?=base_url()?>js/jquery-3.2.0.min.js"></script>
+    <script src="<?=base_url()?>js/bootstrap.min.js"></script>
+    <script src="<?=base_url()?>js/bootstrap-datepicker.min.js"></script>	
 	<title>PLANIFICADOR DE RUTAS</title>
 
 
@@ -25,8 +29,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<a class="navbar-brand">PLANIFICADOR DE RUTAS</a>
 					<ul class="nav navbar-nav">
 						<li ><a href="<?=base_url()?>index.php/rutas">Rutas </a></li>
-						<li><a href="<?=base_url()?>/index.php/unidad">Unidad </a></li>
-						<li><a href="<?=base_url()?>/index.php/unidad">Asignar Rutas</a></li>
+						<li><a href="<?=base_url()?>index.php/unidad">Unidad </a></li>
+						<li><a href="<?=base_url()?>index.php/asignar">Asignar Rutas</a></li>
 					</ul>		
 				</div>
 				<div class="navbar-right" style="padding-right:10px">
@@ -46,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>	
-	}<?php else:?> {
+	<?php else:?> {
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
@@ -76,7 +80,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<?php endif?>
 
 
-	<script src="<?=base_url()?>js/jquery-3.2.0.min.js"></script>
-    <script src="<?=base_url()?>js/bootstrap.min.js"></script>
+
 </body>
 </html>
