@@ -1,49 +1,56 @@
-<form id="formulario"  class="form-horizontal" action="<?=base_url()?>index.php/login/enviar" method="post">
-  <fieldset>
-  <legend class="text-center">Asignar Rutas</legend >
-    <div class="container">
-        <div class="row">
-            <div class='col-sm-6 col-md-6'>
-                <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                        <input id="fecha" name="fecha" type='text' class="form-control" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-                <div class='col-sm-6 col-md-6'>
-                    <div class="form-group">
-                      <button onclick="return validar('fecha')" type="button" class="btn btn-success">Empezar</button>
-                    </div>
-                </div>            
-        </div>
-    </div>
-  </fieldset>
+<form class="form-horizontal" action="<?=base_url()?>index.php/login/enviar" method="post">
+<fieldset>
+
+
+<legend class="text-center">Registrar Usuario</legend >
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Email</label>  
+  <div class="col-md-4">
+  <input  name="email" type="text" placeholder="Ingrese email" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Repetir email</label>  
+  <div class="col-md-4">
+  <input name="email2" type="text" placeholder="Repetir email" class="form-control input-md">
+    
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" >Nombre De Usuario</label>  
+  <div class="col-md-4">
+  <input name="nombre" type="text" placeholder="Nombre" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Password</label>
+  <div class="col-md-4">
+    <input name="password" type="password" placeholder="password" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Repetir Password</label>
+  <div class="col-md-4">
+    <input name="password2" type="password" placeholder="password" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" ></label>
+  <div class="col-md-8">
+    <button id="" name="" class="btn btn-success">Enviar</button>
+    <button id="" name="" class="btn btn-danger">Cancelar</button>
+  </div>
+</div>
+
+</fieldset>
 </form>
-
-<script type="text/javascript">
-    $(function () {
-        $('#datetimepicker1').datepicker();
-    });
-    $('.datepicker').datepicker({
-        format: 'mm/dd/yyyy',
-        startDate: '-3d'
-    });
-   function validar(fecha){
-      fecha=document.getElementById(fecha);
-      if (fecha.value==""){
-        alert("no puede estar vacio");
-        fecha.focus();
-        return false;
-      }  
-      else{
-        var enviar=document.getElementById("formulario");
-        console.log(enviar);
-        enviar.submit();
-      }
-    }
-</script>
-
-

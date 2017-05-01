@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'planificacion_rutas',
+	'hostname' => 'mysql.hostinger.com.ar',
+	'username' => 'u959058694_myspa',
+	'password' => 'Jm08091988.',
+	'database' => 'u959058694_all',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
